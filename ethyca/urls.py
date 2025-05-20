@@ -1,3 +1,5 @@
+from views import test_view
+
 """
 URL configuration for ethyca project.
 
@@ -19,4 +21,6 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', test_view.current_datetime, name='index'),
+
 ]
